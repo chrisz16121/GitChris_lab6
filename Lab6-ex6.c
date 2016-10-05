@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 int main(void) 
 {
-	char *ch;
-	*ch=malloc(sizeof(char)*2);    
+	char *ch = malloc(sizeof(char)*2);    //changed this to immediately malloc the space
 	ch[1]='3';
 	ch[2]='a';
 	while (ch[1] > '0') 
