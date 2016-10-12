@@ -10,10 +10,10 @@ int main()
     FILE* file1 = fopen(fileName, "w");
     printf("start writing your file\n");
     char c;
+    printf("CTRL+d is a correct ending\n");//this still isnt qorking quite right
     while ((c=getchar()) != EOF)
     {
         fprintf(file1,"%c",c);
-	printf("CTRL+d is a correct ending\n");//this still isnt qorking quite right
     }
  
     fclose(file1);
