@@ -3,7 +3,7 @@
 int factorial (int num)
 {
     if(num==1) return 1;//needed to check for a base case to execute termination
-    else return num * factorial( num - 1 );
+    else return num * factorial( num - 1 );//would have just kept calling itself, potential stack issues and a segfualt occured before
 }
 
 int main(void)
